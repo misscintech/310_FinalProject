@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sharp Scholars - About Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='sharp1.css'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='main.js'></script>
+    <style>
+body{
+   background-color: white;
+}
+ /* ul {
+  list-style-type: none;
+   margin: 0.0;
+    padding: 0.0;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+    background-color: #ffffff;
+          /* opacity: 0.6; */
+      /* }
+      
+li {
+  float: left;
+  }
+      
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+      
+li a:hover:not(.active) {
+   background-color: rgb(163, 163, 163);
+      } */
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#011936;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+font-family: 'Raleway', sans-serif;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:white;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#05b2dc;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+.logo {
+    text-align:center;
+      }
+      
+ .title {
+     color: black;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+     margin-bottom: 20px;
+     position: relative;
+      }
+
+#footer {font-size: 75%;
+  font-style:italic;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;   
+
+  }
+  
+.courses{
+ font-family: 'Raleway', sans-serif;
+  background-color: rgba(5, 178, 220, 0.3);
+  padding-right: 100px;
+  padding-left: 200px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+#brain{
+  padding-right: 80px;
+  padding-left: 80px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+// Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  } // End if
+});
+});
+</script>
+</head>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      
+    <!-- <ul>
+        <li><a href="home.html"><img class="icon" src="https://drive.google.com/uc?id=1TPWbLDfzk92jluEyRs7GpGsEKMDR0guI" height="41" width="123"></a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="specs.html">SPECIFICATION</a></li>
+        <li><a href="team.html">OUR TEAM</a></li>
+        <li><a href="courses.html">COURSES</a></li>
+        <li style="float:right"><a href="Login/login.html">LOGIN/REGISTER</a></li>
+    </ul> -->
+    <div class="area"></div>
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="home.html">
+              <i class="fa fa-home fa-2x"></i>
+              <span class="nav-text">HOME</span>
+          </a>
+        
+      </li>
+      <li class="has-subnav">
+          <a href="about.html">
+              <i class="fa fa-book-reader fa-2x"></i>
+              <span class="nav-text">ABOUT</span>
+          </a>
+          
+      </li>
+      <li class="has-subnav">
+          <a href="specs.html">
+            <i class="fa fa-info-circle fa-2x"></i>
+              <span class="nav-text">SPECS</span>
+          </a>
+          
+      </li>
+      <li class="has-subnav">
+          <a href="team.html">
+             <i class="fa fa-user-friends fa-2x"></i>
+              <span class="nav-text">TEAM</span>
+          </a>
+         
+      </li>
+      <li>
+          <a href="courses.html">
+              <i class="fa fa-laptop fa-2x"></i>
+              <span class="nav-text">COURSES</span>
+          </a>
+      </li>
+          <li>
+              <a href="brain.html">
+                <i class="fa fa-head-side-virus fa-2x"></i>
+                  <span class="nav-text">BRAIN:</span>
+              </a>
+          </li>
+          <li>
+             <a href="#">
+              <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+                  <span class="nav-text">How to learn/study</span>
+              </a>
+          </li>
+          <li>
+             <a href="#">
+              <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+                  <span class="nav-text">How to time manage</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+                  <span class="nav-text">Resources </span>
+              </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+                <span class="nav-text">Finals </span>
+            </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+              <span class="nav-text">Research Positions</span>
+          </a>
+      </li>
+    <!-- <li>
+      <a href="personal.html">
+        <i class="fa fa-heartbeat fa-2x"></i>
+          <span class="nav-text">PERSONAL HEALTH</span>
+      </a>
+  </li>
+    <li>
+      <a href="social.html">
+        <i class="fa fa-users fa-2x"></i>
+          <span class="nav-text">SOCIAL</span>
+      </a>
+  </li> -->
+      </ul>
+
+      <ul class="logout">
+          <li>
+             <a href="#">
+                   <i class="fa fa-power-off fa-2x"></i>
+                  <span class="nav-text">
+                      Logout
+                  </span>
+              </a>
+          </li>  
+      </ul>
+  </nav>
+
+    <div class="title">
+        <p>BRAIN</p>
+    </div>
+<!--
+    <div>
+        <div class="courses" id="learn">
+        <h3>HOW TO LEARN/STUDY </h3>
+        <p>All of the following information is based on a class most of our team was required to take called Decision Making and Problem Solving, it mainly talked about these concepts in an algebra based context because we are all STEM majors but I (the writer) believe this can be applied to all topics. I tried to include examples from all kinds of topics to show this point. You may think you already know how to learn, but I encourage you to read this regardless, you may learn something new. </p>
+        <h4>Now on to the topic…</h4>
+        <p> First things first, you should know that you learn best from examples. When learning from example, study the example, making sure you understand what each step is and how they got there. If you come across a similar problem, you may be able to solve it using similar steps. This may allow you to generalize the steps for a specific kind of problem. We’ll go in more detail later. The next thing to know is, in general, there are three stages to learning something: initial, intermediate, and final stage.</p>
+        <p>In the initial stage, you learn basic concepts, facts, and other declarative information. You can do this by reading/listening/watching, transforming new information into old knowledge (know your facts), discussing with others to check your facts, and repeating the process.</p>
+        <p>In the intermediate stage you have just learned all the basics, and now you need to practice. The intermediate stages are your first few practices. You read or listen to descriptions of problems, study examples of different ways to solve problems, correct mistakes you make, and learn (whether you are aware of it or not) how to get to the information needed to solve a problem. </p>
+        <p>The final stage is after you’ve practiced different kinds of problems and you have gotten a feel for how to solve problems for a certain topic. In this stage, you increase the speed and accuracy of solving the problems, and recall how you solved other problems to solve new ones. </p>
+        <h4>A note on cramming...</h4>
+        <p>Cramming doesn’t work, you only retain that information for a short amount of time vs spacing your learning process out, you’ll remember it for longer. I’m sure you’ve heard that before and think I’m full of it so I want you to think about something. Think about the last time you crammed for a test, do you remember anything that was on that test? Now think about a song that played every day on the radio for an entire summer, I bet you can remember the lyrics to that song right now.</p>
+        <p>Hey so remember when I said you should study the example? So there’s this thing called self-explanation where you explain to yourself where every variable, every component, every part of the problem comes from. </p>
+        <p>For example if a physics problem says F = ma you’d explain it to yourself as “oh, F = ma is Force equals mass times acceleration.” </p>
+        <p>Another part of self-explanation is how you handle feedback. When you get tests or homework back, it’s important to go back and understand what you did right and why, what you did wrong and why, and how you can do better next time. Basically, if you are trying to master a topic, mess up on the homework (not purposefully) so that you can learn from your mistakes and go forth and kill that test!</p>
+        <p>Some people learn best when they learn in groups and so I’m gonna shout out to y’all for a sec.</p>
+        <p>If you are with a partner going over your tests/homework/etc, it’ll be helpful to explain how to do the ones they got wrong to them as clearly as possible. Know that at the end of the day, when you make mistakes, you aren’t dumb. You are lucky, because you can use it as an opportunity to learn, moving forward. If you shut down, you aren’t going to help yourself for next time, are you?</p>
+        <p>Hey remember when I said you can use examples to solve other problems? Turns out there’s a right and wrong way to go about this. When you find an example that’s basically the problem you’re solving, plug in the numbers, and copy the solution you get, you didn’t learn anything. A better way is to only go to the example if you are stuck, read only enough to be unstuck, then when you finish helping yourself get on track, self-explaining how you got there and continuing.</p>
+        <p>Did you know that “muscle memory” has an official name? Automatic processing--when triggered, your motor skills go without a second thought or effort on your part. It can’t be done with everything but it takes many, many repetitions to develop and once you’ve learned how to do something with muscle memory, it’s hard to prevent doing it. For example, think about throwing a football, when you first learn to properly do so, you don’t know how to get the nice spin that comes with practice. However, over time, you learn to do so somewhat perfectly, ensuring your teammate can catch the ball.</p>
+        <p>Have you ever felt like you pick up something quickly because it seems similar to something you already know? For example, if you are a culinary student and you mastered the art of baking cupcakes, making cake or bread probably isn’t as far-fetched as they have a similar list of ingredients/steps. </p>
+        <p>Anyway, this is known as transfer and there is positive and negative transfer. Positive transfer is when you have this overlap of knowledge. From the example above, bread sometimes has to sit to “prove” so that it’ll rise vs cupcakes don’t. This would be an example of a shared experience stopping and thus a stop in transfer. </p>
+        <p>Now, I mentioned positive transfer, which implicates a phenomenon of negative transfer and that does indeed exist. It’s basically bad/inefficient habits. So if I learned a short-cut on how to cut vegetables and it wasn’t the most efficient way, it’ll be harder for me to learn a more efficient way because I would have to overcome muscle memory which I mentioned earlier being difficult. </p>
+        <p>Another part of transfer is part-whole transfer. It’s when you learn/master parts of a concept but then wonder if it’s possible to transfer those skills to a concept that includes both parts. For example, when learning grammar, you learn what a noun, verb, adverb, adjective, and prepositional phrase but does that mean if given a sentence containing all of them you can identify all of them? Not necessarily. Apparently it’s better to have easier sentences that contain nouns, verbs, adverbs, adjectives, and prepositional phrases then gradually increase the difficulty. </p> 
+         </div>
+    
+    
+   <div class="courses"id="study">
+          <h3>HOW TO STUDY</h3>
+        </div> 
+    
+        <div class="courses" id="time-manage">
+        <h3>HOW TO TIME MANAGE</h3>
+       <p>While you can do your own research and get advice from the likes of Forbes (https://www.forbes.com/sites/johnrampton/2018/05/01/manipulate-time-with-these-powerful-20-time-management-tips/#321fe0b557ab) or Purdue Global (https://www.purdueglobal.edu/blog/student-life/time-management-busy-college-students/), I would like to tell you what works well for me. Hi, my name is Claudia and I am a member of the Sharp Scholars team. When divvying up the vast topics for this website, I specifically requested to speak on this topic. Why? Because I believe that if you can master this skill, you will succeed much more at college/life in general. So here goes.</p>
+        <p>When I start a semester, I have a notebook that is akin to a bullet journal or planner. In it, I map out my schedule and every week. Every month gets a different theme with different colors because that’s fun. If you are a planner person, get yourself a planner. Don’t know if you are a planner person? Try it. If you don’t open your planner once in the first two-ish weeks of school, congrats, you are not a planner person. Don’t worry, that doesn’t mean you can’t learn the skill of time management. If you are not a planner-person but spend 12 hours looking at your phone, consider putting in all of your assignments in your calendar on your phone, you can have it notify you, reminding you XYZ time out of your due dates in your calendar or other apps. </p>
+        <p>As soon as you get your syllabus, input all of your assignments, due dates, etc into your planner/calendar/system. Next look at when you have class. Determine when you have free time relative to when your assignments are due. For ex ample:</p>
+        Add table 
+    
+       <p>This is my schedule. My due dates are mostly on Tuesdays, Thursdays, and Sundays. From this, I determined my days to do homework are on Mondays, Wednesdays, and Fridays/weekends.</p>
+        <h4>“That’s too structured for me,” you say. I got you don’t worry. </h4>
+        <p>Another way I manage time is to make a giant list of what I need to do with their due date. In my head, I estimate how long each task will take. Then I do the tasks in order of when they are due. “What if I really, really don’t feel like doing the task I have due next?” That’s why you mentally keep track of how long it takes you to do the task. You can do a short task or a task you feel like you can do easiest next. The idea is to keep up your productive momentum. Like they say in physics, “an object in motion stays in motion”, you keep your productive momentum, you shrink your list, you eventually finish everything on said list. </p>
+        <h4>“A giant to do list is too overwhelming for me.” I totally got you, I normally don’t show people my giant to do list because seeing it is stressful for them. </h4>
+        <p>Instead of having a giant to do list for the entire semester (or the last month of school when things get super hectic like me), you can take it a week at a time. If that’s still too much for you, think of what you need to get done today and plan accordingly. If you finish everything on your list today, you can either be done for the day, or start on tomorrow. </p>
+        <h4>“I didn’t finish everything on my list for today”.</h4>
+        <p>That’s ok, cut your losses and begin anew tomorrow. The most important thing is to have a good day, and it’s ok to take days off too (I’m super bad at that so if you are like me and figure out how to take a day off, let me know). </p>
+        <h4>A quick note about your lists: </h4>
+        <p>In my planner I have a box system.</p> 
+         Add table 
+      <p>When I do my to do lists, I put them on a whiteboard. Essentially both of my systems do the same thing. The box system offers an acknowledgement of starting a project and finishing a project. Writing out what I have to do on a whiteboard is super satisfying to wipe off and erase it from being there. </p>
+        <p>What I’m trying to say is, it doesn’t matter what system you use to keep track of your things to do. The important thing I’ve noticed is acknowledging progress and completion. This helps keep that production momentum going, making you want to keep going.</p>
+        <h4>“Do you recommend music or podcasts, etc while you work?”</h4>
+        <p>The answer is it depends on you. For some tasks, like chores, music/podcasts/etc are great because chores are often menial. When it comes to homework, I’ve worked with people who make a study playlist and that’s the only playlist they listen to while they work. The repetition helps them basically drown it out and they are able to focus. Or if a good song comes on and they sing a bit, they are still able to keep up the momentum. </p>
+        <p>For me, I get bored if I listen to the same playlist so I have different ones with different genres of music. My liked videos playlist on Youtube is filled with recent music I’ve found and liked, but I have a Disney playlist, a Broadway playlist, a focus playlist of instrumental/video game/indie music, and a motivational playlist on Spotify. I like Youtube because they let me have adblock but I like Spotify’s ability to recommend music for your playlists. Pick and choose your favorite music listening systems. I don’t like ads, I find them distracting and they interrupt the momentum. </p>
+        <p>As for podcasts, I don’t know many people that listen to them while working on homework. I listen to Critical Role which I consider to be a dungeons and dragons podcast. I find I have to be in a very specific mood to listen to that while working. I can’t be working on something where I have to read a bunch or intensely focused. However, it was great when I took a photoshop based class and did a bunch of drawing on my computer. </p>
+        <h4>“What about breaks?”</h4>
+        <p>If you find yourself slowing momentum, this is a great time to take a break, grab a drink, some water, go to the bathroom, and walk around. If you are studying with other people, socialize a bit, chances are they are slowing down a bit too and you can encourage each other and talk about nonsense for 5 minutes, it won’t kill you. </p>
+        <p>Say you can’t get out of the slowed momentum state, it may be time to do something different. When I get stuck on a coding assignment, I try doing a chore like unloading the dishwasher and coming back to it. If I can’t get out of the slowed momentum state and I have done everything I can think of to try and increase the momentum again, I quit for the day. When I say trying everything I can think of to try and increase the momentum, this can mean doing chores, asking for help from classmates, working on a different assignment, exercising, doing a hobby for 30 minutes, getting another cup of coffee (or caffeinated beverage of your choosing), etc.  </p>
+        <p>I hope this was helpful for you, may you be able to get everything on your list done.</p> 
+        </div>
+    
+        <div class="courses"id="brain-resources">
+          <h3>RESOURCES ACCESSIBLE TO YOU</h3>
+          <p>In college, you may find the material more difficult than in high school. There’s no shame in asking for help and I’ve compiled a list of resources for you. Some of these are ASU specific since all of the team members of Sharp Scholars are ASU students but most universities offer similar resources to the ASU specific ones.</p>
+          <h4>Speaking of...</h4>
+          <p>Tutoring at ASU:  <a href="https://tutoring.asu.edu/"></a></p>
+          <p>I have used the tutoring centers at ASU on multiple occasions. Something ASU does well is having general tutoring centers and specific tutoring centers. For example, close to the dorm housing on University they have tutoring centers that offer general tutoring. However, if you go to the engineering buildings, there are two engineering specific tutoring centers. All of the tutors are super helpful and I’ve sat with a tutor for several minutes before as they helped me understand a problem. </p>
+          <p>Accessibility for uni life at ASU: <a href="https://eoss.asu.edu/drc"></a></p>
+          <p>At ASU, they have accommodations for everyone. In class it can translate to having a note taker or getting more test time or being able to reschedule your exam. I had an ex-roommate who loved taking her tests at the DRC center.  </p>
+          <p>Tech help at ASU: <a href="https://uto.asu.edu/"></a></p>
+          <p>In the midst of a pandemic, this might be one of the most vital resources available to you as a student. Whether you need help with a program not working or having issues with the WIFI, these resources are here to help.</p>
+          <p>Not all of our users are ASU students so now I’d like to give you some resources to help all of you, no matter what kind of major you are pursuing or what college you go to. I did some research for more resources but ultimately decided that if a friend or I haven’t personally used the resource, I don’t want to recommend it. Since this is the section for the brain, these resources are only to help you academically but I encourage you to check out our other resources for social and personal health.</p>
+          <p>Crash course: <a href="https://www.youtube.com/user/crashcourse"></a></p>
+          <p>Created as an extension of vlogbrothers (yes that John and Hank Green), crash course provides bite sized education on a variety of topics. It’s great for review. When I was a freshman in college, I binged their chemistry playlist the morning of my final. It was super helpful for getting my head in the game. </p>
+          <p>Circuits: <a href="https://www.electronics-tutorials.ws/"></a></p>
+          <p>Before I switched my major from mechanical engineering to computer science, circuits was one of my least favorite classes. Funny since in high school AP physics, I loved circuits because it was easy. I’m very thankful I didn’t have to take circuits again as a computer science major and my credit transferred. If you are a circuit wizard, more power to you. If, like me, you struggle with circuits, this website was super helpful in understanding in depth circuits. </p>
+          <p>Symbolab: <a href="https://www.symbolab.com/ "></a></p>
+          <p>I don’t encourage you to cheat your way through your math homework but if you are struggling in, say, Calculus and you don’t know how to integrate or where they get their numbers from this is a fantastic site because it walks you through the problem step by step. You can also use it as a graphing calculator if you forgot yours while studying in the library. They also have cheat sheets for math proofs and practice problems. I’ve never used those functions but they are there. </p>
+          <p>Not all of our users are STEM majors, spending all of their time doing math, some of you decided you wanted to write a lot of essays in college. Don’t worry, I have some stuff for you too. </p>
+          <p>Looking for a word you know but don’t know? <a href="http://onelook.com/reverse-dictionary.shtml"></a></p>
+          <p>This I got from Tumblr when I was in high school and I wanted to try writing my first book. While I never finished the book, I have found it super helpful when I’m looking for a word that I know exists but don’t know what it is. Based on what you search, it gives you nouns, adjectives, verbs, and adverbs. Super duper helpful. </p>
+          <p>citations/checking your paper? <a href=" https://www.easybib.com/"></a></p>
+          <p>Noodletools: <a href="https://www.noodletools.com/"></a></p>
+          <p>Yes, some college profs still require you to have a work cited page in XYZ format. Some are more particular about it than others but with these two tools, you don’t have to think about it. Both make it super easy although I know I have a preference for noodletools. </p>
+          <p>Grammarly: <a href="https://www.grammarly.com/ "></a></p>
+          <p>Do you suck at grammar like I do because you haven’t studied grammar since elementary school? This website/ Chrome plugin is for you. One new feature I really like is the tone detector. It analyzes the words you use to detect what tone your message comes across as. While it’s not perfect, it is nice to know I will never purposefully send my profs an angsty email ever again. (I’ve done it on accident out of frustration and regret ensued). </p>
+          <p>Lastly, I have some general tools I use all the time in college. </p>
+          <p>Quizlet: <a href="https://quizlet.com/"></a></p>
+          <p>Again, I don’t condone cheating but I’d be a liar if I said I don’t use this. I’m sure you’ve used this in high school but in case you haven’t, quizlet lets you create flashcards and test them.  A piece of advice is if you are going to make a large list of flashcards, and it starts to make you hate your life a bit, break it up. So if you are trying to create flashcards for chapters 1 and 2 of your textbook, do a list for chapter 1 and a separate list for chapter 2. It creates a sense of accomplishment that helps you keep going. </p>
+          <p>Google Drive: <a href="https://www.google.com/intl/en_zm/drive/ "></a></p>
+          <p>Now more than ever, I use Google drive to store all of my old work (in folders by class-- you never know when you’ll need something), awards, etc. You can also make team drives which makes it easy to collaborate with other people. </p>
+          <p>Rate my professors: <a href="https://www.ratemyprofessors.com/"></a></p>
+          <p>While not technically an academic resource, this is one I recommend in general when you register for classes. It gives you a good idea what to expect when you take a class with an XYZ professor. I will warn you that they are self reported so often you'll only get the extremes of people who love (or hate) a professor but if you aggregate all of the information on that professor, you’ll get a good sense of what a professor is like.</p>
+          <p>I hope these help you in getting the help you need to succeed. </p>
+        </div>
+    
+        <div class="courses"id="finals">
+          <h3>FINALS</h3>
+        </div>
+    
+        <div class="courses"id="research">
+          <h3>RESEARCH POSITIONS</h3>
+        </div> -->
+      
+        </div>
+    <div id="footer">
+    <footer>Copyright &copy; 2020 Sharp Scholors</footer>
+    </div>
+</body>
+</html>

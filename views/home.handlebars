@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sharp Scholars</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='sharp.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src='main.js'></script>
+
+<style>
+#header-text{
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  right: 230px;
+  top: 350px;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: center;
+}
+#header-text2{
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  right: 575px;
+  top: 560px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+#signup_form{
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  right: 675px;
+  top: 620px;
+  font-size: 20px;
+  text-align: center;
+}
+#signup_form button{
+  background-color: #ADACB5;
+  color: white;
+  border: none;
+}
+
+</style>
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+
+    <ul>
+        <li><a href="home"><img class="icon" src="https://drive.google.com/uc?id=1TPWbLDfzk92jluEyRs7GpGsEKMDR0guI" height="41" width="123"></a></li>
+        <li><a href="about">ABOUT</a></li>
+        <li><a href="specs">SPECIFICATION</a></li>
+        <li><a href="team">OUR TEAM</a></li>
+        <li><a href="courses">COURSES</a></li>
+        <li style="float:right"><a href="Login/login">LOGIN/REGISTER</a></li>
+    </ul>
+    
+    <div class="w3-content w3-section" style="max-width:1368px">
+      <img class="mySlides w3-animate-fading" src="grad1.png" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="CollegePic.jpg" style="width:100%">
+      <img class="mySlides w3-animate-fading" src="StudentPic.jpg" style="width:100%">
+    </div>
+
+  <div class="slider-wrap">
+    <div class="slider" id="slider">
+      <div class="holder">
+        <div class="slide" id="slide-0"><span class="temp">Prepare yourself for college</span></div>
+        <div class="slide" id="slide-1"><span class="temp">Experience college life</span></div>
+          <div class="slide" id="slide-2"><span class="temp">Explore college campus</span></div>
+      </div>
+    </div>
+    <nav class="slider-nav">
+      <a href="#slide-0" class="active">Slide 0</a> 
+      <a href="#slide-1">Slide 1</a> 
+      <a href="#slide-2">Slide 2</a> 
+    </nav>
+  </div>
+
+    <!-- Header Text -->
+    <div id="header-text">The necessities to achieve the <br> best <span style="color: #8E2F2E;">college experience</span></div>
+    <div id="header-text2">For students, by students.</div>
+  
+    <!-- Sign Up Button -->
+    <div> 
+      <form id="signup_form">
+        <button type="button" onclick="revealform()">Sign Up</button>
+      </form>
+    </div>
+
+</div>
+   <footer id="footer">Copyright &copy; 2020 Sharp Scholors</footer>
+ </div>
+ 
+<!--Script begins-->
+{{!-- This is handlebars --}}
+ <script>
+  //Home page main automatic slideshow function  
+ var myIndex = 0;
+ carousel();
+ 
+ function carousel() {
+   var i;
+   var x = document.getElementsByClassName("mySlides");
+   for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+   }
+   myIndex++;
+   if (myIndex > x.length) {myIndex = 1}    
+   x[myIndex-1].style.display = "block";  
+   setTimeout(carousel, 8000); // Change image every 8 seconds
+ }
+ 
+ //Responsive side slider JS
+ var slider = {
+ el: {
+   slider: $("#slider"),
+   allSlides: $(".slide"),
+   sliderNav: $(".slider-nav"),
+   allNavButtons: $(".slider-nav > a")
+ },
+ 
+ timing: 800,
+ slideWidth: 200, // Width of the side
+ 
+ // binding here to the init function
+ init: function() {
+   this.bindUIEvents();
+ },
+ 
+ bindUIEvents: function() {
+   //manually scroll
+   this.el.slider.on("scroll", function(event) {
+     slider.moveSlidePosition(event);
+   });
+   //click a thing
+   this.el.sliderNav.on("click", "a", function(event) {
+     slider.handleNavClick(event, this);
+   });
+ },
+ 
+ moveSlidePosition: function(event) {
+   this.el.allSlides.css({
+     "background-position": $(event.target).scrollLeft()/6-100+ "px 0"
+   });  
+ },
+ 
+ handleNavClick: function(event, el) {
+   event.preventDefault();
+   var position = $(el).attr("href").split("-").pop();
+   
+   this.el.slider.animate({
+     scrollLeft: position * this.slideWidth
+   }, this.timing);
+   
+   this.changeActiveNav(el);
+ },
+ 
+ changeActiveNav: function(el) {
+   this.el.allNavButtons.removeClass("active");
+   $(el).addClass("active");
+ }
+ 
+ };
+ 
+ slider.init();
+</script>
+</body>
+</html>

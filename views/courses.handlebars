@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sharp Scholars - About Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='sharp1.css'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='main.js'></script>
+
+<style>
+body{
+    background-color: white;
+      }
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#011936;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+font-family: 'Raleway', sans-serif;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:white;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#05b2dc;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+.logo {
+    text-align:center;
+}
+
+.title {
+  color:black;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.courses{
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  width: auto;
+  background-color:	#DCDCDC;
+}
+#footer {font-size: 75%;
+  font-style:italic;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;   
+
+  }
+
+.brain-courses{
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    right: 900px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.brain-courses:hover{
+  background-color: #C8C8C8;
+  opacity: 0.5;
+}
+
+.personal-courses{
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    right: 550px;
+    box-shadow: 10px 10px 5px grey;
+
+}
+
+.personal-courses:hover{
+  background-color: #C8C8C8;
+  opacity: 0.5;
+}
+
+.social-courses{
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    right: 200px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.social-courses:hover{
+  background-color: #C8C8C8;
+  opacity: 0.5;
+}
+
+#course-top{
+    background-color: blue;
+    width: 300px;
+    height: 250px;
+    padding: none;
+}
+
+#course-bottom{
+  color: black;
+  height: 150px;
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#course-bottom p {
+  position: absolute;
+  font-size: 18px;
+  bottom: 10px;
+}
+
+#course-link{
+  display: block;
+}
+</style>
+</head>
+<body>
+  <!-- <div id="page-container">
+    <div id="content-wrap">
+      
+    <ul>
+        <li><a href="home.html"><img class="icon" src="https://drive.google.com/uc?id=1TPWbLDfzk92jluEyRs7GpGsEKMDR0guI" height="41" width="123"></a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="specs.html">SPECIFICATION</a></li>
+        <li><a href="team.html">OUR TEAM</a></li>
+        <li><a href="courses.html">COURSES</a></li>
+        <li style="float:right"><a href="Login/login.html">LOGIN/REGISTER</a></li>
+    </ul> -->
+    <div class="area"></div>
+    <nav class="main-menu">
+      <ul>
+          <li>
+              <a href="home.html">
+                  <i class="fa fa-home fa-2x"></i>
+                  <span class="nav-text">HOME</span>
+              </a>
+            
+          </li>
+          <li class="has-subnav">
+              <a href="about.html">
+                  <i class="fa fa-laptop fa-2x"></i>
+                  <span class="nav-text">ABOUT</span>
+              </a>
+              
+          </li>
+          <li class="has-subnav">
+              <a href="specs.html">
+                <i class="fa fa-info-circle fa-2x"></i>
+                  <span class="nav-text">SPECS</span>
+              </a>
+              
+          </li>
+          <li class="has-subnav">
+              <a href="team.html">
+                 <i class="fa fa-user-friends fa-2x"></i>
+                  <span class="nav-text">TEAM</span>
+              </a>
+             
+          </li>
+          <li>
+              <a href="courses.html">
+                  <i class="fa fa-laptop fa-2x"></i>
+                  <span class="nav-text">COURSES</span>
+              </a>
+          </li>
+          <li>
+              <a href="brain.html">
+                <i class="fa fa-head-side-virus fa-2x"></i>
+                  <span class="nav-text">BRAIN:</span>
+              </a>
+          </li>
+          <li>
+             <a href="#">
+              <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+                  <span class="nav-text">How to learn/study</span>
+              </a>
+          </li>
+          <li>
+             <a href="#">
+              <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+                  <span class="nav-text">How to time manage</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+                  <span class="nav-text">Resources </span>
+              </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+                <span class="nav-text">Finals </span>
+            </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-head-side-virus" style="color: #011936;"></i>
+              <span class="nav-text">Research Positions</span>
+          </a>
+      </li>
+      </ul>
+
+      <ul class="logout">
+          <li>
+             <a href="#">
+                   <i class="fa fa-power-off fa-2x"></i>
+                  <span class="nav-text">
+                      Logout
+                  </span>
+              </a>
+          </li>  
+      </ul>
+  </nav>
+
+    <div class="title">
+        <p>COURSES</p>
+    </div>
+    <div class="courses">
+          <a id="course-link" href="brain.html">
+          <form id="brain-form">
+          <div class="brain-courses">
+            <div id="course-top">
+                <img src="7.jpg" style="width:300px; height: 100%;">
+            </div>
+
+            <div id="course-bottom">
+              <p><i class="fas fa-layer-group" style="color: #05b2dc;"></i> 5 sections</p>
+            </div>
+          </div>
+        </form></a>
+
+        <a id="course-link" href="personal.html">
+          <form id="personal-form">
+          <div class="personal-courses">
+            <div id="course-top">
+               <img src="8.jpg" style="width:300px; height: 100%;">
+            </div>
+            <div id="course-bottom">
+                <p><i class="fas fa-layer-group" style="color: #05b2dc;"></i> 3 sections</p>
+            </div>
+          </div>
+        </form></a>
+
+        <a id="course-link" href="social.html">
+        <form id="social-form">
+          <div class="social-courses">
+            <div id="course-top">
+              <img src="9.jpg" style="width:300px; height: 100%;">
+            </div>
+            <div id="course-bottom">
+              <p><i class="fas fa-layer-group" style="color: #05b2dc;"></i>   5 sections</p>
+            </div>
+          </div>
+        </form></a>
+
+    </div>
+     
+    
+      <footer id="footer">Copyright &copy; 2020 Sharp Scholors</footer>
+</body>
+</html>
