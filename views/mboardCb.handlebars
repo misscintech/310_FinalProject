@@ -1,0 +1,29 @@
+{{! Welcom to the Social Message Board}}
+
+<div class="nav">
+    <a href="/register">register</a><a href="/login">login</a><a href="/logout">logout</a><a href="/">Brain Messages</a><a href="/mboardSocial">Social Messages</a><a href="/mboardPhysical">Phys Messages</a>
+</div>
+{{! err handling}}
+{{#if error}}
+<div>
+    {{error}}
+</div>
+{{/if}}
+{{! ----------------------------}}
+
+{{#if user}} <!--you can send/view messages if you are logged in boardId = 3-->
+<ul>
+    {{#each messages}}
+    <li>
+        {{this.authorName}} : {{this.content}}
+    </li>
+    {{/each}}
+</ul>
+<form action="/mboardCb" method="POST">
+    <input type="text" placeholder="insert message here" name="message">
+    <button type="submit">send</button>
+</form>
+{{else}}
+<p>You can't send a message until you log in :)</p>
+{{/if}}
+{{! Quiz go down here}}

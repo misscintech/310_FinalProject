@@ -1,0 +1,28 @@
+<div class="nav">
+    <a href="/register">register</a><a href="/login">login</a><a href="/logout">logout</a><a href="/">Brain Messages</a>{{!<a href="/mboarCa">Social Messages</a><a href="/mboardCb">Phys Messages</a>}}
+</div>
+
+{{! err handling}}
+{{#if error}}
+<div>
+    {{error}}
+</div>
+{{/if}}
+
+{{#if user}} <!--you can send/view messages if you are logged in boardId = 1-->
+<ul>
+    {{#each messages}}
+    <li>
+        {{this.authorName}} : {{this.content}}
+    </li>
+    {{/each}}
+</ul>
+<form action="/message" method="POST">
+    <input type="text" placeholder="insert message here" name="message">
+    <button type="submit">send</button>
+</form>
+{{else}}
+<p>You can't send a message until you log in :)</p>
+{{/if}}
+
+

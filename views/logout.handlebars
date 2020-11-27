@@ -1,0 +1,10 @@
+<div class="nav">
+    <a href="/register">register</a><a href="/login">login</a><a href="/logout">logout</a><a href="/">Brain Messages</a>{{!<a href="/mboarCa">Social Messages</a><a href="/mboardCb">Phys Messages</a>}}
+</div>
+
+
+{{#if user}}
+<form action="/logout" method="POST">
+    <button type="submit">logout</button>
+</form>
+{{/if}}
